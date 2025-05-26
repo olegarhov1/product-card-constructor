@@ -180,6 +180,8 @@
   box-shadow: 0 4px 32px #0002;
   margin: 32px 0 0 0;
   display: block;
+  width: 900px;
+  height: 600px;
   max-width: 100%;
   max-height: 80vh;
 }
@@ -1546,6 +1548,11 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+
+window.addEventListener('resize', function() {
+  fixCanvasResolution(canvas);
+  drawProductCard();
+});
 </script>
 
 </body>
