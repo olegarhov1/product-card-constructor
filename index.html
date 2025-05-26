@@ -1308,7 +1308,7 @@ function drawProductCard() {
   let textY = 40;
   let maxTextWidth = w - productAreaW - 40;
 
-  drawLabelValue(ctx, "Тип модели:", templates[category] && templates[category][sizeType] ? templates[category][sizeType] : category, textX, textY, fontSize, textAlign, maxTextWidth, textColor, fontFamily, strokeWidth, strokeColor);
+  drawLabelValue(ctx, "Тип моделі:", templates[category] && templates[category][sizeType] ? templates[category][sizeType] : category, textX, textY, fontSize, textAlign, maxTextWidth, textColor, fontFamily, strokeWidth, strokeColor);
   textY += fontSize + lineHeight;
   drawLabelValue(ctx, "Бренд:", brand, textX, textY, fontSize, textAlign, maxTextWidth, textColor, fontFamily, strokeWidth, strokeColor);
   textY += fontSize + lineHeight;
